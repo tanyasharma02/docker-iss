@@ -68,7 +68,7 @@ def write_to_mongo(dtime, long, lat):
         db = client['mst3k']
         collection = db['locations']
         collection.insert_one({'timestamp': dtime, 'longitude': long, 'latitude': lat})
-        logger.info('Output written to MongoDB')
+        logger.info('Tanya has updated this script!')
     except Exception as e:
         logger.error(e)
         exit(1)
